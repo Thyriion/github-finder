@@ -23,7 +23,6 @@ export const getUserAndRepos = async (login) => {
         sort: 'created',
         per_page: 10,
     });
-
     const [user, repos] = await Promise.all([
         github.get(`/users/${login}`),
         github.get(`/users/${login}/repos?${repoParams}`),
