@@ -25,7 +25,7 @@ function App() {
                                 <Route path="/*" element={<NotFound />} />
                             </Routes>
                         </main>
-                        <Footer />p
+                        <Footer />
                     </div>
                 </Router>
             </AlertProvider>
